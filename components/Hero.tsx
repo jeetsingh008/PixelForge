@@ -4,11 +4,15 @@ import Image from "next/image";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import blob from "../public/blob.png";
 import heropng from "../public/Heropng.png";
+import bg from "../public/herobg.jpg";
 import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="overflow-hidden bg-light relative">
+    <section className="overflow-hidden bg-[#F5F5F5] rounded-b-md relative">
+      {/* <div className="absolute">
+        <Image src={bg} alt="background image" layout="fixed"/>
+      </div> */}
       <Navbar />
       <div className="container grid grid-cols-1 md:grid-cols-2 min-h-[640px]">
         {/* Brand Info */}
@@ -25,7 +29,7 @@ const Hero = () => {
                 ease: ["easeIn", "easeOut"],
                 duration: 0.5,
               }}
-              className="text-4xl md:text-5xl font-bold !leading-snug"
+              className="text-4xl contrast-150 md:text-5xl lg:text-[3.2rem] font-bold !leading-snug"
             >
               We Build <span className="text-secondary">Websites</span> That
               Build Your Business
@@ -43,7 +47,7 @@ const Hero = () => {
               }}
               className="flex justify-center md:justify-start"
             >
-              <button className="primary-btn flex items-center gap-2 group">
+              <button className="primary-btn flex items-center gap-2 group text">
                 Get Started
                 <IoIosArrowRoundForward className="text-2xl group-hover:translate-x-2 group-hover:-rotate-45 duration-200 ease-in-out" />
               </button>
@@ -53,17 +57,17 @@ const Hero = () => {
 
         {/* Hero image */}
         <div className="flex justify-center items-center">
-          <div className="w-[350px] md:w-[400px] xl:w-[500px] relative z-10">
+          <motion.div initial={{x:-50, opacity: 0}} animate={{x: 0, opacity: 1}} transition={{duration: 0.7, delay: 0.4, ease: "easeInOut"}} className="w-[350px] md:w-[400px] xl:w-[450px] relative z-10">
             <Image
               src={heropng}
               alt="A boy with a computer pic"
               layout="responsive"
               className="drop-shadow"
             />
-          </div>
-          <div className="absolute -bottom-10 lg:-bottom-6 xl:-bottom-14 w-[540px] md:w-[620px] lg:w-[700px] xl:w-[820px] z-[1] hidden md:block">
+          </motion.div>
+          <motion.div initial={{x: 50, opacity: 0}} animate={{x: 0, opacity: 1}} transition={{duration: 0.6, delay: 0.2, ease: "easeInOut"}} className="absolute -bottom-10 lg:-bottom-6 xl:-bottom-14 w-[540px] md:w-[620px] lg:w-[700px] xl:w-[750px] z-[1] hidden md:block">
             <Image src={blob} alt="blog pic" layout="responsive" />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
