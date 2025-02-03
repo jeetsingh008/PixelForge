@@ -17,9 +17,9 @@ const Navbar = () => {
   return (
     <motion.div initial={{y: -50}} animate={{y: 0}} transition={{duration: 0.5, ease: "easeInOut"}} className="container relative z-10 flex justify-between items-center overflow-x-hidden p-2">
       {/* logo part */}
-      <div className="flex justify-between">
+      <div className="flex justify-between cursor-pointer group">
         <div className="flex gap-1 justify-center items-center">
-          <div className="w-10 h-10 hover:rotate-180 duration-300 ease-in-out cursor-grab">
+          <div className="w-10 h-10 group-hover:rotate-180 duration-300 ease-in-out">
             <Image
               src={logo}
               alt="Logo"

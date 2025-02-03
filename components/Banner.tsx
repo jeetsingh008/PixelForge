@@ -43,12 +43,12 @@ const Banner = () => {
               src={bannerImage}
               alt="banner image"
               layout="responsive"
-              className="contrast-125"
+              className="contrast-125 drop-shadow-md hover:drop-shadow-none duration-200"
             />
           </div>
         </div>
         {/* Banner text */}
-        <div className="flex flex-col gap-8 justify-center items-center relative z-30">
+        <div className="flex flex-col gap-8 justify-center items-center relative z-30 cursor-pointer">
           <div>
             <h1 className="text-6xl md:text-5xl lg:text-6xl font-semibold text-center md:text-start">
               Your{" "}

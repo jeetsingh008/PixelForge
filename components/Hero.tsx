@@ -65,7 +65,7 @@ const Hero = () => {
               className="drop-shadow"
             />
           </motion.div>
-          <motion.div initial={{x: 50, opacity: 0}} animate={{x: 0, opacity: 1}} transition={{duration: 0.6, delay: 0.2, ease: "easeInOut"}} className="absolute -bottom-10 lg:-bottom-6 xl:-bottom-14 w-[540px] md:w-[620px] lg:w-[700px] xl:w-[750px] z-[1] hidden md:block">
+          <motion.div initial={{x: 50, opacity: 0}} animate={{x: 0, opacity: 1}} transition={{duration: 0.6, delay: 0.2, ease: "easeInOut"}} className="absolute -bottom-10 md:-bottom-0 lg:-bottom-6 xl:-bottom-14 w-[540px] md:w-[620px] lg:w-[700px] xl:w-[750px] z-[1] hidden md:block">
             <Image src={blob} alt="blog pic" layout="responsive" />
           </motion.div>
         </div>
