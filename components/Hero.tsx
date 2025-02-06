@@ -4,12 +4,11 @@ import Image from "next/image";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import blob from "../public/blob.png";
 import heropng from "../public/Heropng.png";
-import bg from "../public/herobg.jpg";
 import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="overflow-hidden bg-[#F5F5F5] rounded-b-md relative">
+    <section className="overflow-hidden bg-gradient-to-r from-white to-[#f5f5f5] rounded-b-md relative">
       {/* <div className="absolute">
         <Image src={bg} alt="background image" layout="fixed"/>
       </div> */}
@@ -23,7 +22,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{
                 type: "spring",
-                stiffness: 100,
+                stiffness: 100, 
                 damping: 10,
                 delay: 0.6,
                 ease: ["easeIn", "easeOut"],
@@ -47,9 +46,9 @@ const Hero = () => {
               }}
               className="flex justify-center md:justify-start"
             >
-              <button className="primary-btn flex items-center gap-2 group text">
+              <button className="primary-btn rounded-3xl flex items-center gap-2 group">
                 Get Started
-                <IoIosArrowRoundForward className="text-2xl group-hover:translate-x-2 group-hover:-rotate-45 duration-200 ease-in-out" />
+                <IoIosArrowRoundForward className="text-2xl group-hover:translate-x-2 duration-200 ease-in-out" />
               </button>
             </motion.div>
           </div>

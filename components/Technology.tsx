@@ -1,37 +1,47 @@
+"use client";
 import React from "react";
-import { TbMarquee } from "react-icons/tb";
 import Marquee from "./Marquee";
-import Image from "next/image";
-import weaponicon from "../public/sword.png";
+import { animate, motion } from "framer-motion";
+
+const animationVariants = {
+  initial: {
+    x: -500,
+  },
+  animate: {
+    x: 0,
+  },
+};
 
 const Technology = () => {
   return (
-    <section className="container p-4 py-7">
-      <div className="overflow-hidden flex flex-col gap-4">
+    <section className="p-4 py-7 overflow-x-hidden">
+      <div className="container flex flex-col gap-4 overflow-hidden">
         {/* Heading */}
-        <div className="flex justify-center items-center">
-          <div className="h-[60px] w-[60px] relative inline-block scale-x-[-1]">
-            <Image
-              src={weaponicon}
-              alt="weapon icon"
-              fill
-              className="object-contain"
-            />
-          </div>
-          <h1 className="text-[1.8rem] sm:text-5xl lg:text-6xl !leading-snug text-center font-medium p-6">
-            Our <span className="text-secondary">Tech</span> Arsenal
-          </h1>
-          <div className="h-[60px] w-[60px] relative inline-block">
-            <Image
-              src={weaponicon}
-              alt="weapon icon"
-              fill
-              className="object-contain"
-            />
-          </div>
+        <div className="overflow-x-hidden">
+          <motion.div
+            variants={animationVariants}
+            initial="initial"
+            whileInView="animate"
+            transition={{ duration: 1 }}
+            className="flex justify-start items-center"
+          >
+            <h1 className="text-[1.8rem] text-black contrast-125 bg-secondary sm:text-5xl 2xl:text-6xl !leading-snug text-start font-medium py-2 clipped-box px-3">
+              Our Tech Arsenal
+            </h1>
+          </motion.div>
+        </div>
+        <div className="flex-wrap">
+          <p className="text-start text-xs sm:text-sm text-secondary">
+            We use a modern tech stack to build seamless web, mobile, and
+            desktop applications. Our frontend ensures responsive interfaces,
+            while our backend provides secure and efficient processing. We also
+            specialize in mobile and Java development, creating scalable and
+            high-performance solutions with reliable databases and cloud
+            services.
+          </p>
         </div>
         {/* Marquee */}
-        <div className="py-4">
+        <div className="py-4 border-2 border-y-secondary border-x-transparent">
           <Marquee />
         </div>
       </div>

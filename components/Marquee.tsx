@@ -7,7 +7,6 @@ import Image from "next/image";
 const Marquee = () => {
   return (
     <div className="flex overflow-hidden">
-
       <motion.div
         initial={{ x: 0 }}
         animate={{ x: "-100%" }}
@@ -16,9 +15,14 @@ const Marquee = () => {
       >
         {icons.map((icon, index) => (
           <div key={index} className=" relative h-[80px] w-[80px] ">
-            <Image src={icon} alt="icon" fill className="object-contain" />
+            <Image
+              src={icon}
+              alt="icon"
+              fill
+              className="object-contain"
+            />
           </div>
-        ))} 
+        ))}
       </motion.div>
       <motion.div
         initial={{ x: 0 }}
@@ -28,9 +32,14 @@ const Marquee = () => {
       >
         {icons.map((icon, index) => (
           <div key={index} className="relative h-[80px] w-[80px] ">
-            <Image src={icon} alt="icon" fill className="object-contain" />
+            <Image
+              src={icon}
+              alt="icon"
+              fill
+              className="object-contain"
+            />
           </div>
-        ))} 
+        ))}
       </motion.div>
       <motion.div
         initial={{ x: 0 }}
@@ -40,9 +49,14 @@ const Marquee = () => {
       >
         {icons.map((icon, index) => (
           <div key={index} className="relative h-[80px] w-[80px] ">
-            <Image src={icon} alt="icon" fill className="object-contain" />
+            <Image
+              src={icon}
+              alt="icon"
+              fill
+              className="object-contain"
+            />
           </div>
-        ))} 
+        ))}
       </motion.div>
     </div>
   );

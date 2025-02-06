@@ -3,13 +3,17 @@
 @tailwind utilities;
 
 @layer components {
-    .primary-btn {
-        @apply inline-block bg-primary text-white font-semibold rounded-lg hover:bg-secondary duration-200 shadow-[0px_10px_8px_-7px_#ffd978] hover:shadow-[0px_10px_8px_-7px_#69a79c] py-2 px-6
-    }
+  .primary-btn {
+    @apply inline-block bg-primary text-white font-semibold rounded-lg hover:bg-secondary duration-100 shadow-[5px_5px_2px_-3px_#000000] hover:shadow-[7px_5px_4px_-3px_#000000] py-2 px-6;
+  }
 }
 
 @layer utilities {
-    .drop-shadow {
-        filter: drop-shadow(6px 8px 10px rgba(0, 0, 0, 0.5))
-    }
+  .drop-shadow {
+    filter: drop-shadow(6px 8px 10px rgba(0, 0, 0, 0.5));
+  }
+}
+.clipped-box {
+  padding-right: 80px;
+  clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
 }
