@@ -1,13 +1,11 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import { motion } from "framer-motion";
-import bannerImage from "../public/image.png";
+import bannerImage from "../public/heroimg.jpg";
 import pic1 from "../public/paint-palette.png";
 import pic2 from "../public/fast-time.png";
 import pic3 from "../public/book.png";
 import pic4 from "../public/headset.png";
-import bg from "../public/bluemountain.jpg";
 
 const Features = [
   {
@@ -34,7 +32,7 @@ const Features = [
 
 const Banner = () => {
   return (
-    <section>
+    <section className="overflow-x-hidden">
       <div className="container relative overflow-hidden bg-gradient-to-l from-white to-[#f5f5f5] text-dark py-14 md:py-24 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:space-y-6 md:space-y-0">
         {/* Banner image */}
         <div className="flex justify-center items-center">
@@ -43,7 +41,7 @@ const Banner = () => {
               src={bannerImage}
               alt="banner image"
               layout="responsive"
-              className="contrast-125 drop-shadow-md hover:drop-shadow-none duration-200"
+              className="contrast-125 hover:drop-shadow-md  duration-300 rounded-full"
             />
           </div>
         </div>

@@ -5,7 +5,7 @@ import { animate, motion } from "framer-motion";
 
 const animationVariants = {
   initial: {
-    x: -500,
+    x: "-100%",
   },
   animate: {
     x: 0,
@@ -22,10 +22,10 @@ const Technology = () => {
             variants={animationVariants}
             initial="initial"
             whileInView="animate"
-            transition={{ duration: 1 }}
+            transition={{ duration: 0.8 }}
             className="flex justify-start items-center"
           >
-            <h1 className="text-[1.8rem] text-black contrast-125 bg-secondary sm:text-5xl 2xl:text-6xl !leading-snug text-start font-medium py-2 clipped-box px-3">
+            <h1 className="text-[1.8rem] text-black contrast-150 bg-secondary sm:text-5xl 2xl:text-6xl !leading-snug text-start font-medium py-2 clipped-box px-3">
               Our Tech Arsenal
             </h1>
           </motion.div>
