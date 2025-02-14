@@ -7,6 +7,16 @@ import { IoMdHappy } from "react-icons/io";
 import { IoPulseOutline } from "react-icons/io5";
 import { BiSupport } from "react-icons/bi";
 import Link from "next/link";
+import { motion } from "framer-motion";
+
+const movingAnimationVariant = {
+  initial: {
+    x: "-100%",
+  },
+  animate: {
+    x: 0,
+  },
+};
 
 const ServicesData = [
   {
@@ -57,10 +67,18 @@ const Services = () => {
   return (
     <section className="bg-white">
       <div className="container pb-14 pt-16">
-        <div className="bg-secondary inline-block mb-10 p-4 clipped-box">
-          <h1 className="text-4xl text-black font-semibold contrast-150 text-left">
-            Services we provide
-          </h1>
+        <div className="overflow-x-hidden">
+          <motion.div
+            variants={movingAnimationVariant}
+            initial="initial"
+            whileInView="animate"
+            transition={{ duration: 0.8 }}
+            className="bg-secondary contrast-150 mb-10 p-4 clipped-box w-full sm:w-2/3 lg:w-2/4 xl:w-1/3"
+          >
+            <h1 className="text-2xl text-black font-semibold contrast-150 text-left">
+              Services we provide
+            </h1>
+          </motion.div>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-6 gap-8">
           {ServicesData.map((service) => (
