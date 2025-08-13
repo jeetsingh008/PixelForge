@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../public/code.png";
@@ -15,7 +15,12 @@ const Navbar = () => {
   ];
 
   return (
-    <motion.div initial={{y: -50}} animate={{y: 0}} transition={{duration: 0.5, ease: "easeInOut"}} className="container relative z-10 flex justify-between items-center overflow-x-hidden p-2">
+    <motion.div
+      initial={{ y: -50 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 0.5, ease: "easeInOut" }}
+      className="container relative z-10 flex justify-between items-center overflow-x-hidden p-2"
+    >
       {/* logo part */}
       <div className="flex justify-between cursor-pointer group">
         <div className="flex gap-1 justify-center items-center">
@@ -37,11 +42,11 @@ const Navbar = () => {
           {links.map((obj) => (
             <li key={obj.id}>
               <Link
-                className="inline-block py-2 font-medium hover:text-secondary relative group"
+                className="inline-block py-2 font-medium hover:text-customSecondary relative group"
                 href={obj.url}
               >
                 {" "}
-                <div className="w-2 h-2 bg-secondary absolute left-1/2 top-1/2 -translate-x-1/2 bottom-0 hidden group-hover:block rounded-full"></div>{" "}
+                <div className="w-2 h-2 bg-customSecondary absolute left-1/2 top-1/2 -translate-x-1/2 bottom-0 hidden group-hover:block rounded-full"></div>{" "}
                 {obj.title}
               </Link>
             </li>

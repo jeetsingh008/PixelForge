@@ -73,7 +73,7 @@ const Services = () => {
             initial="initial"
             whileInView="animate"
             transition={{ duration: 0.8 }}
-            className="bg-secondary contrast-150 mb-10 p-4 clipped-box w-full sm:w-2/3 lg:w-2/4 xl:w-1/3"
+            className="bg-customSecondary contrast-150 mb-10 p-4 clipped-box w-full sm:w-2/3 lg:w-2/4 xl:w-1/3"
           >
             <h1 className="text-2xl text-black font-semibold contrast-150 text-left">
               Services we provide
@@ -85,7 +85,7 @@ const Services = () => {
             <Link
               href={service.link}
               key={service.id}
-              className="bg-[#f4f4f4] rounded-2xl flex flex-col gap-4 items-center justify-center p-4 py-7 hover:bg-white hover:scale-110 duration-200 hover:shadow-2xl"
+              className="bg-[#dfe9f3] rounded-2xl flex flex-col gap-4 items-center justify-center p-4 py-7 hover:bg-white hover:scale-110 duration-200 hover:shadow-2xl"
             >
               <div className="text-4xl mb-4">{service.icon}</div>
               <h1 className="text-center px-3">{service.title}</h1>
