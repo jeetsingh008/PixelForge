@@ -1,14 +1,11 @@
 "use client";
 import React from "react";
 import Marquee from "./Marquee";
-import { animate, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const animationVariants = {
   initial: {
     x: "-100%",
-  },
-  animate: {
-    x: 0,
   },
 };
 
