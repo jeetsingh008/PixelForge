@@ -33,7 +33,8 @@ const Features = [
 const Banner = () => {
   return (
     <section className="overflow-x-hidden">
-      <div className="container relative overflow-hidden bg-gradient-to-l from-white to-[#f5f5f5] text-dark py-14 md:py-24 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:space-y-6 md:space-y-0">
+      <div className="container relative overflow-hidden bg-gradient-to-r from-[#f0f4f8] via-[#d9e2ec] to-[#f0f4f8]
+ text-dark py-14 md:py-24 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:space-y-6 md:space-y-0">
         {/* Banner image */}
         <div className="flex justify-center items-center">
           <div className="w-[800px] md:w-[1200px]">
@@ -63,7 +64,7 @@ const Banner = () => {
             {Features.map((feature) => (
               <div
                 key={feature.id}
-                className="flex flex-col gap-4 justify-center items-center bg-[#F5F5F5] rounded-2xl hover:scale-105 hover:bg-white hover:shadow-2xl group duration-200 ease-in-out py-5 p-6"
+                className="flex flex-col gap-4 justify-center items-center bg-[#ffffff] rounded-2xl hover:scale-105 hover:bg-white hover:shadow-2xl group duration-200 ease-in-out py-5 p-6"
               >
                 <div className="h-6 w-6 group-hover:animate-ping">
                   <Image src={feature.pic} alt="icon" layout="fixed" />

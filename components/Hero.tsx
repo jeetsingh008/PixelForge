@@ -8,7 +8,10 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="overflow-hidden bg-gradient-to-r from-white to-[#f5f5f5] rounded-b-md relative">
+    <section
+      className="overflow-hidden bg-gradient-to-r from-[#e6ebf0] via-[#dfe9f3] to-[#edf2f7]
+ rounded-b-md relative"
+    >
       {/* <div className="absolute">
         <Image src={bg} alt="background image" layout="fixed"/>
       </div> */}
@@ -22,7 +25,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{
                 type: "spring",
-                stiffness: 100, 
+                stiffness: 100,
                 damping: 10,
                 delay: 0.6,
                 ease: ["easeIn", "easeOut"],
@@ -56,7 +59,12 @@ const Hero = () => {
 
         {/* Hero image */}
         <div className="flex justify-center items-center">
-          <motion.div initial={{x:-50, opacity: 0}} animate={{x: 0, opacity: 1}} transition={{duration: 0.7, delay: 0.4, ease: "easeInOut"}} className="w-[350px] md:w-[400px] xl:w-[450px] relative z-10">
+          <motion.div
+            initial={{ x: -50, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.7, delay: 0.4, ease: "easeInOut" }}
+            className="w-[350px] md:w-[400px] xl:w-[450px] relative z-10"
+          >
             <Image
               src={heropng}
               alt="A boy with a computer pic"
@@ -65,7 +73,12 @@ const Hero = () => {
               priority
             />
           </motion.div>
-          <motion.div initial={{x: 50, opacity: 0}} animate={{x: 0, opacity: 1}} transition={{duration: 0.6, delay: 0.2, ease: "easeInOut"}} className="absolute -bottom-10 md:-bottom-0 lg:-bottom-6 xl:-bottom-14 w-[540px] md:w-[620px] lg:w-[700px] xl:w-[750px] z-[1] hidden md:block">
+          <motion.div
+            initial={{ x: 50, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.2, ease: "easeInOut" }}
+            className="absolute -bottom-10 md:-bottom-0 lg:-bottom-6 xl:-bottom-14 w-[540px] md:w-[620px] lg:w-[700px] xl:w-[750px] z-[1] hidden md:block"
+          >
             <Image src={blob} alt="blog pic" layout="responsive" />
           </motion.div>
         </div>

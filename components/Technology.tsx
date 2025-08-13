@@ -41,7 +41,7 @@ const Technology = () => {
           </p>
         </div>
         {/* Marquee */}
-        <div className="py-4 border-2 border-y-secondary border-x-transparent">
+        <div className="py-4 border-2 rounded-full px-4 bg-[#e6ebf0]/50 border-secondary border-x-transparent overflow-hidden">
           <Marquee />
         </div>
       </div>

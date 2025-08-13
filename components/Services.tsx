@@ -85,7 +85,7 @@ const Services = () => {
             <Link
               href={service.link}
               key={service.id}
-              className="bg-[#f4f4f4] rounded-2xl flex flex-col gap-4 items-center justify-center p-4 py-7 hover:bg-white hover:scale-110 duration-200 hover:shadow-2xl"
+              className="bg-[#dfe9f3] rounded-2xl flex flex-col gap-4 items-center justify-center p-4 py-7 hover:bg-white hover:scale-110 duration-200 hover:shadow-2xl"
             >
               <div className="text-4xl mb-4">{service.icon}</div>
               <h1 className="text-center px-3">{service.title}</h1>
