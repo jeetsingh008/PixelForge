@@ -73,7 +73,7 @@ const Services = () => {
             initial="initial"
             whileInView="animate"
             transition={{ duration: 0.8 }}
-            className="bg-secondary contrast-150 mb-10 p-4 clipped-box w-full sm:w-2/3 lg:w-2/4 xl:w-1/3"
+            className="bg-customSecondary contrast-150 mb-10 p-4 clipped-box w-full sm:w-2/3 lg:w-2/4 xl:w-1/3"
           >
             <h1 className="text-2xl text-black font-semibold contrast-150 text-left">
               Services we provide

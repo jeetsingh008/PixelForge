@@ -5,11 +5,12 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import blob from "../public/blob.png";
 import heropng from "../public/Heropng.png";
 import { motion } from "framer-motion";
+import { BackgroundLines } from "./ui/background-lines";
 
 const Hero = () => {
   return (
-    <section
-      className="overflow-hidden bg-gradient-to-r from-[#e6ebf0] via-[#dfe9f3] to-[#edf2f7]
+    <BackgroundLines
+      className="overflow-hidden bg-gradient-to-r from-[#f4f6f8] via-[#eef2f6] to-[#f7f9fb]
  rounded-b-md relative"
     >
       {/* <div className="absolute">
@@ -33,7 +34,8 @@ const Hero = () => {
               }}
               className="text-4xl contrast-150 md:text-5xl lg:text-[3.2rem] font-bold !leading-snug"
             >
-              We Build <span className="text-secondary">Websites</span> That
+              We Build{" "}
+              <span className="text-customcustomSecondary">Websites</span> That
               Build Your Business
             </motion.h1>
             <motion.div
@@ -83,7 +85,7 @@ const Hero = () => {
           </motion.div>
         </div>
       </div>
-    </section>
+    </BackgroundLines>
   );
 };
 

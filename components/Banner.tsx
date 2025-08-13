@@ -33,8 +33,10 @@ const Features = [
 const Banner = () => {
   return (
     <section className="overflow-x-hidden">
-      <div className="container relative overflow-hidden bg-gradient-to-r from-[#f0f4f8] via-[#d9e2ec] to-[#f0f4f8]
- text-dark py-14 md:py-24 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:space-y-6 md:space-y-0">
+      <div
+        className="container relative overflow-hidden bg-gradient-to-r from-[#f0f4f8] via-[#d9e2ec] to-[#f0f4f8]
+ text-dark py-14 md:py-24 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:space-y-6 md:space-y-0"
+      >
         {/* Banner image */}
         <div className="flex justify-center items-center">
           <div className="w-[800px] md:w-[1200px]">
@@ -51,11 +53,11 @@ const Banner = () => {
           <div>
             <h1 className="text-6xl md:text-5xl lg:text-6xl font-semibold text-center md:text-start">
               Your{" "}
-              <span className="text-primary hover:animate-pulse cursor-grab">
+              <span className="text-customPrimary hover:animate-pulse cursor-grab">
                 Vision
               </span>
               , Our{" "}
-              <span className="text-secondary hover:animate-pulse  cursor-grab">
+              <span className="text-customSecondary hover:animate-pulse  cursor-grab">
                 Code
               </span>
             </h1>
