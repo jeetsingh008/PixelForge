@@ -9,6 +9,10 @@ This project is a modern, responsive showcase of our services, team, and philoso
 ## 📸 Website Preview
 <img width="2879" height="1537" alt="Screenshot 2025-10-14 105657" src="https://github.com/user-attachments/assets/2e2477a7-a276-456b-b9c9-349396772bbc" />
 
+## 🌐 Live Demo
+
+Check out the live version of our website here:  
+👉 **[https://pixel-forge-blush.vercel.app/](https://pixel-forge-blush.vercel.app/)**
 
 ---
 
