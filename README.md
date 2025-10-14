@@ -63,3 +63,19 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/your-username/pixelforge-website.git
+```
+Go to project folder:
+```bash
+cd ./pixelforge
+```
+Install dependencies
+```bash
+npm install
+```
+Run the development server:
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
